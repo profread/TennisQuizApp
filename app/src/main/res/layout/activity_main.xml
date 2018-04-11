@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/courtbackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.tenniscounter.MainActivity">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/nadal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Nadal"
+                android:textColor="#FF6F00"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_nadal_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="san-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#FF6D00"
+                android:textSize="50sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addFifteenPointForTeamNadal"
+                android:text="+15points"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="add2ndFifteenpointforTeamNadal"
+                android:text="++15points" />
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="addTenPointForTeamNadal"
+            android:text="+10points" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="add2ndTenPointForTeamNadal"
+                android:text="++10points" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/PPR_GREY800"
+            />.
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.tenniscounter.MainActivity">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/novak"/>
+
+
+            <TextView
+                android:id="@+id/team_novak_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Novak"
+                android:textColor="#FF6F00"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/team_novak_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="san-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#FF6D00"
+                android:textSize="50sp"
+                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addFifteenPointForTeamNovak"
+                android:text="+15points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="add2ndFifteenpointforTeamNovak"
+                android:text="++15points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addTenPointForTeamNovak"
+                android:text="+10points" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="add2ndTenpointForTeamNovak"
+                android:text="++10points" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="resetScore"
+        android:text="reset"
+        android:textAllCaps="true" />
+</RelativeLayout>
